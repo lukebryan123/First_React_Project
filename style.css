@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  margin: 0;
+}
+
+.App {
+  font-family: Poppins;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero-container {
+  margin: 0;
+  height: 350px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("https://assets.codepen.io/6060109/agency-hero-image.png");
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav > a {
+  padding: 20px 10px;
+  display: inline-block;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+h2{
+  font-size:28px
+}
+
+h2,
+a {
+  color: white;
+}
+
+.hero-container > h2 {
+  width: 80%;
+  padding: 100px 0 0 10%;
+}
+
+/* Services Section */
+
+.services-section {
+  padding: 80px 0;
+}
+
+.services-section > h2 {
+  color: #133588;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.service-block {
+  width: 25%;
+  max-width: 180px;
+  text-align: left;
+  color: #806c6c;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.service-block > img {
+  width: 100%;
+  max-width: 180px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer Section */
+.footer-section{
+  background-color: #133588;
+  padding: 50px 10px;
+}
+
+.footer-section > h2{
+  padding-bottom:30px;
+  width:50%;
+  margin:auto;
+}
+
+form{
+  /* border:1px solid white; */
+  height:100px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type='text']{
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #133588;
+  width:50%;
+  min-width:250px;
+  max-width:350px;
+  color:white;
+  opacity:0.9;
+  padding:6px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  text-align: center;
+}
+
+input[type='submit']{
+  color:#806c6c;  
+  font-weight:bold;
+  padding: 8px 20px;
+  border:none;
+}
+
+@media only screen and (max-width: 450px){
+
+  .services-section{
+    padding-top:50px;
+  }
+  .services-list{
+    flex-direction: column;
+    align-items:center;
+  }
+  .service-block {
+    width:180px;
+    margin-bottom:20px;
+  }
+}
